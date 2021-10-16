@@ -10,5 +10,8 @@ var destination = document.querySelector("#container");
 var store = createStore(cartReducer);
 
 ReactDOM.render(
-    
-)
+  <Provider store={store}>
+      <App />
+  </Provider>,
+  destination
+);
