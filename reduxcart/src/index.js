@@ -8,3 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 var destination = document.querySelector("#container");
 var store = createStore(cartReducer);
+
+ReactDOM.render(
+    
+)
