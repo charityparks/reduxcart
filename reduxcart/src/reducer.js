@@ -5,4 +5,15 @@ function cartReducer(state, action) {
             productCart: []
         };
     }
+
+    switch (action.type) {
+        case "add Product":
+            return {
+                ...state,
+                totalCost: state.totalCost+parseInt(action.productData.productPrice),
+                productCart: state.productCart.concat({
+                    
+                })
+            }
+    }
 }
