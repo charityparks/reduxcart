@@ -16,5 +16,13 @@ function cartReducer(state, action) {
                     productPrice: action.productData.productPrice
                 })
             }
+        case "deleteProduct":
+            const updatedArray = state.productCart.filter(product =>
+                product.productName !== action.productData.productName);
+            return{
+                ...state,
+                totalCost: state.totalCost-parseInt(action.productData.productPrice),
+                productCart: updatedArray
+            }
     }
 }
