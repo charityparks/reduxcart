@@ -24,5 +24,7 @@ function cartReducer(state, action) {
                 totalCost: state.totalCost-parseInt(action.productData.productPrice),
                 productCart: updatedArray
             }
+        default: 
+            return state;
     }
 }
