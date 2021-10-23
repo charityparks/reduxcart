@@ -12,7 +12,8 @@ function cartReducer(state, action) {
                 ...state,
                 totalCost: state.totalCost+parseInt(action.productData.productPrice),
                 productCart: state.productCart.concat({
-                    
+                    productName: action.productData.productName,
+                    productPrice: action.productData.productPrice
                 })
             }
     }
