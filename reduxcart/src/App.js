@@ -22,3 +22,7 @@ function mapDispatchToProps(dispatch) {
         })
     }
 }
+var connectedComponent = connect (
+    mapStateToProps,
+    mapDispatchToProps
+)(Cart);
