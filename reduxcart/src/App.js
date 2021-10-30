@@ -12,8 +12,13 @@ function mapDispatchToProps(dispatch) {
         onAddProduct: (productName, productPrice) => dispatch({
             type: "addProduct",
             productData:{
-                
+               productName: productName,
+               productPrice: productPrice 
             }
+        }),
+        onDeleteProduct: (productData) => dispatch({
+            type: "deleteProduct",
+            productData: productData
         })
     }
 }
