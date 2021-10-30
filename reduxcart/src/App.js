@@ -7,3 +7,13 @@ function mapStateToProps(state) {
         productCart: state.productCart
     }
 }
+function mapDispatchToProps(dispatch) {
+    return {
+        onAddProduct: (productName, productPrice) => dispatch({
+            type: "addProduct",
+            productData:{
+                
+            }
+        })
+    }
+}
