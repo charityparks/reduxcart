@@ -26,3 +26,5 @@ var connectedComponent = connect (
     mapStateToProps,
     mapDispatchToProps
 )(Cart);
+
+export default connectedComponent;
