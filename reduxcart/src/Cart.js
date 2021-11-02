@@ -14,6 +14,13 @@ class Cart extends Component {
                         <th>#</th>
                     </tr>
                 </thead>
+                <tbody>
+                    {this.props.productCart.map(productData => (
+                        <tr key={productData.productName}>
+                            
+                        </tr>
+                    ))}
+                </tbody>
             </Table>
         
         </div>
