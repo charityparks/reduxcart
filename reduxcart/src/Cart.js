@@ -17,7 +17,10 @@ class Cart extends Component {
                 <tbody>
                     {this.props.productCart.map(productData => (
                         <tr key={productData.productName}>
-                            
+                            <td>{productData.productName}</td>
+                            <td>{productData.productPrice}</td>
+                            <td> onClick={ () =>
+                        this.props.onDeleteProduct(productData)}>Remove</td>
                         </tr>
                     ))}
                 </tbody>
