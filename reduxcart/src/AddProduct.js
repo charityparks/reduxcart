@@ -5,4 +5,8 @@ class AddProduct extends Component {
         productName: '',
         productPrice: 0
     }
+
+    productNameChangedHandler = (event) =>{
+        this.setState({productName: event.target.value});
+    }
 }
