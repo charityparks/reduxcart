@@ -12,4 +12,11 @@ class AddProduct extends Component {
     productPriceChangedHandler = (event) =>{
         this.setState({productPrice: event.target.value});
     }
+    render() {
+        return(
+            <div className="container">
+                
+            </div>
+        )
+    }
 }
