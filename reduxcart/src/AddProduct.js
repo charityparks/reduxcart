@@ -9,4 +9,7 @@ class AddProduct extends Component {
     productNameChangedHandler = (event) =>{
         this.setState({productName: event.target.value});
     }
+    productPriceChangedHandler = (event) =>{
+        this.setState({productPrice: event.target.value});
+    }
 }
